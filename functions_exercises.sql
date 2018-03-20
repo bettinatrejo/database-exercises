@@ -2,7 +2,7 @@ USE employees;
 
 
 #Find all employees whose last name starts with 'E'
-SELECT concat(first_name,' ',last_name)
+SELECT concat(first_name,' ',last_name) AS 'Full Name'
 FROM employees
 WHERE last_name LIKE 'E%'
 ORDER BY emp_no DESC;
@@ -15,7 +15,7 @@ FROM employees
 WHERE birth_date LIKE '%12-25' AND hire_date LIKE '199%'
 ORDER BY birth_date asc, hire_date DESC;
 
-SELECT datediff(now(), hire_date), first_name, last_name
+SELECT *, datediff(now(), hire_date) AS 'Days at Company'
 From employees
 WHERE birth_date LIKE '%12-25' AND hire_date LIKE '199%'
 ORDER BY birth_date asc, hire_date DESC;
