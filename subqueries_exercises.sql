@@ -17,6 +17,7 @@ WHERE hire_date = (
   WHERE emp_no = 101010);
 
 
+
 # Find all the titles held by all employees with the first name Aamod.
 SELECT title
 FROM titles
