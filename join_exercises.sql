@@ -105,3 +105,9 @@ FROM employees AS e
   JOIN dept_emp AS de
     ON de.emp_no = e.emp_no
 GROUP BY gender;
+
+
+
+
+
+
